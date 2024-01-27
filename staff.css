@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(88, 9, 88);
+}
+.img_stretch {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: 200px;
+}
+.im-prin{
+  width: 300px;
+  height: 300px;
+  padding: 70px;
+}
+.im-sec{
+  height: 280px;
+  padding: 80px;
+  
+}
+.im-Vice{
+  height: 291px;
+  padding: 80px;
+}
+.im-guide{
+  height: 291px;
+  padding: 70px;
+  
+}
+.im-vp{
+  height: 290px;
+  padding: 70px;
+  margin-left: 500px;
+}
+.im-sen{
+  height: 290px;
+  padding: 70px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.image-container{
+  position: fixed;
+}

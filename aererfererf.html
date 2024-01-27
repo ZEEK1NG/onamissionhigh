@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clubs & Societies</title>
+  <style>
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+body{
+  background: rgb(94, 1, 94);
+  height: 100%;
+}
+.header {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      color: white;}
+
+      
+    .back-button {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      margin-right: 10%; 
+      
+    }
+    
+
+.tile {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+ 
+  
+}
+
+.tile:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="#" class="back-button" onclick="goBack()">&#9665; Back</a>
+    <h1>Clubs & Societies</h1>
+  </div>
+<div class="container"> 
+  <div class="tile">
+    <h2>Drama Club</h2>
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="drama.png" alt="Image 1" style="width:100%; height:100%;">
+      </div>
+      <div class="flip-card-back">
+        <p>We Meet On Fridays</p>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="tile">
+    <h2>Science Club</h2>
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="science.png" alt="Image 30" style="width:100%; height:100%;">
+      </div>
+      <div class="flip-card-back">
+        <p>We Meet On Mondays</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="tile">
+  <h2>Film and Media Society</h2>
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="film.png" alt="Image 30" style="width:100%; height:100%;">
+      </div>
+      <div class="flip-card-back">
+        <p>We Meet On Fridays</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="tile">
+  <h2>Culinary Arts Club</h2>
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="cooking.png" alt="Image 30" style="width:100%; height:100%;">
+      </div>
+      <div class="flip-card-back">
+        <p>We Meet On Tuesdays</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container"></div>
+<div class="tile">
+  <h2>Health and Wellness</h2>
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="health.png" alt="Image 30" style="width:100%; height:100%;">
+      </div>
+      <div class="flip-card-back">
+        <p>We Meet On Thursdays</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+   
+    <div class="tile">
+      <h2>Community Service Club</h2>
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="comun.png" alt="Image 1" style="width:100%; height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <p>We Meet On Fridays</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+    <div class="tile">
+      <h2>Literary Magazine Club</h2>
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="lit mag.png" alt="Image 30" style="width:100%; height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <p>We Meet On Wednesdays</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="tile">
+    <h2>Environmental Club</h2>
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="environment.png" alt="Image 30" style="width:100%; height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <p>We Meet On Thursdays</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="tile">
+    <h2>Robotics and Coding Club</h2>
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="robot.png" alt="Image 30" style="width:100%; height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <p>We Meet On Tuesdays</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container"></div>
+  <div class="tile">
+    <h2>Music Society</h2>
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="music.png" alt="Image 30" style="width:100%; height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <p>We Meet On Wednesdays</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tile">
+    <h2>Photography Club</h2>
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="photo.png" alt="Image 30" style="width:100%; height:100%;">
+      </div>
+      <div class="flip-card-back">
+        <p>We Meet On Thursdays</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+</body>
+</html>

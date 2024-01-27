@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: rgb(94, 1, 94);
+        }
+
+        header {
+            background-color: #333; /* Purple color */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 1em;
+            position: 20px;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: margin-left 0.5s;
+        }
+
+        h2 {
+            color: #333; /* Purple color */
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333; /* Dark text */
+        }
+
+        .back-btn {
+            font-size: 70px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1010;
+            color: #fff;
+        }
+
+        .back-btn:hover {
+            color: #ffd700; /* Change color on hover (yellow) */
+        }
+
+        /* Adjustments to account for the header and section when the back arrow is clicked */
+        .back-btn-opened {
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="back-btn" onclick="goBack()">&lt; </div>
+        <h1>About Us</h1>
+    </header>
+
+    <section id="our-story">
+        <h2>Our Story</h2>
+        <p>Welcome to our website! We are a team of creative minds driven by a shared passion for innovation and excellence. Our journey began with a simple idea—to make a positive impact on the world through technology and design. As a close-knit team, we collaborate, ideate, and bring ideas to life, aiming to create solutions that inspire and elevate user experiences. Join us on this exciting adventure!</p>
+    </section>
+
+    <section id="mission-statement">
+        <h2>Mission Statement</h2>
+        <p>Our mission is to empower individuals and businesses through cutting-edge technology and thoughtful design. We strive to create products and solutions that not only meet but exceed expectations, enhancing the way people interact with the digital world. With a commitment to integrity, creativity, and continuous improvement, we aim to leave a lasting positive impact on our users and the communities we serve.</p>
+    </section>
+
+    <script>
+        function goBack() {
+            var sections = document.getElementsByTagName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.toggle("back-btn-opened");
+            }
+            document.querySelector('.back-btn').classList.toggle('back-btn-opened');
+        }
+    </script>
+</body>
+</html>

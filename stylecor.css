@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: purple;
+}
+.card{    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px #7f8080;
+    
+}
+.card img{
+    position: relative;
+    vertical-align: top;
+    max-width: 100%;
+    transition: 0.25s ease;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card figcaption{
+    position: absolute;
+    padding: 20px px;
+    bottom: 0;
+    z-index: 1;
+}
+.card figcaption::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #b2c4c9, #fff);
+    opacity: 0.8;
+    z-index: -1;
+    pointer-events: none;
+    
+
+
+}
+.card h3{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: purple;
+    margin: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}

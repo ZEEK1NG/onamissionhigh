@@ -1,0 +1,68 @@
+body{
+    background: rgb(158, 0, 158);
+}
+h1{
+    text-align: center;
+    margin: 50px auto 120px;
+    
+}
+.main{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.service{
+    background: purple;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.service h4{
+    height: 35px;
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+
+}
+.service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,rgb(158, 0, 158)white);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+    
+    
+
+}
+.shadowone{
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+
+}
+.shadowone2{
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+
+}
+.main:hover .service{
+    
+}
