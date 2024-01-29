@@ -11,17 +11,30 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background: rgb(94, 1, 94);
+            background: rgb(3, 1, 124);
         }
 
         header {
-            background-color: #333; /* Purple color */
-            color: #fff; /* White text */
-            text-align: center;
+            background-color: #333; 
+            color: #fff; 
+           
             padding: 1em;
             position: 20px;
             width: 100%;
             z-index: 1000;
+            display: flex; 
+            align-items: center;
+            flex-wrap: wrap; 
+        }
+
+        header img {
+            width: 40px; 
+            height: auto; 
+            margin-right: 10px; 
+        }
+
+        header h1 {
+            margin: 0;
         }
 
         section {
@@ -35,38 +48,21 @@
         }
 
         h2 {
-            color: #333; /* Purple color */
+            color: #333; 
         }
 
         p {
             line-height: 1.6;
-            color: #333; /* Dark text */
-        }
-
-        .back-btn {
-            font-size: 70px;
-            cursor: pointer;
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1010;
-            color: #fff;
-        }
-
-        .back-btn:hover {
-            color: #ffd700; /* Change color on hover (yellow) */
-        }
-
-        /* Adjustments to account for the header and section when the back arrow is clicked */
-        .back-btn-opened {
-            
+            color: #333; 
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="back-btn" onclick="goBack()">&lt; </div>
-        <h1>About Us</h1>
+        <a href="#" onclick="goBack()">
+            <img src="logo2.png" alt="Logo"></a>
+            <h1>On A Mission High</h1> 
+            
     </header>
 
     <section id="our-story">
@@ -78,15 +74,5 @@
         <h2>Mission Statement</h2>
         <p>Our mission is to empower individuals and businesses through cutting-edge technology and thoughtful design. We strive to create products and solutions that not only meet but exceed expectations, enhancing the way people interact with the digital world. With a commitment to integrity, creativity, and continuous improvement, we aim to leave a lasting positive impact on our users and the communities we serve.</p>
     </section>
-
-    <script>
-        function goBack() {
-            var sections = document.getElementsByTagName("section");
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].classList.toggle("back-btn-opened");
-            }
-            document.querySelector('.back-btn').classList.toggle('back-btn-opened');
-        }
-    </script>
 </body>
 </html>
